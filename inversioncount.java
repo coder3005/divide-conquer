@@ -1,4 +1,4 @@
-//brute forec approach
+//brute force approach
 package Recursion; 
 
 public class numbers {
