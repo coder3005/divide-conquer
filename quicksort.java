@@ -13,12 +13,12 @@ public class numbers {
             return;
         }
         // last element
-        int pIdx = partition(arr, si, ei);
-        quickSort(arr, si, pIdx - 1); // left
-        quickSort(arr, pIdx + 1, ei); // right
+        int pivot = partition(arr, si, ei);
+        quickSort(arr, si, pivot - 1); // left
+        quickSort(arr, pivot + 1, ei); // right
     }
 
-    public static int partition(int arr[], int si, int ei) {
+    private static int partition(int arr[], int si, int ei) {
         int pivot = arr[ei];
         int i = si - 1; // to make place for elements smaller than pivot
         for (int j = si; j < ei; j++) {
