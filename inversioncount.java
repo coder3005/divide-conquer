@@ -18,3 +18,4 @@ public class numbers {
         System.out.println(inversion(arr,arr.length));
     }
 }
+//TC -> O(n^2)
